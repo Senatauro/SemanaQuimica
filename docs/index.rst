@@ -3,6 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+============
+Documentação da API
+============
+
 Bem vindo a documentação da API(Banco de dados, Autenticador e funções especificas) utilizada no site da Semana da Química!
 
 Este documento possui o objetivo de exibir as operações existentes e como interagir com o banco de dados utilizando a API GraphQL
