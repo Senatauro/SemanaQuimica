@@ -28,7 +28,7 @@ Informações capazes de serem retornadas:
 .. _ex_GetParticipante:
 
 ***********************
-Exemplo de GraphQL
+Aplicação em GraphQL
 ***********************
 
 ::
@@ -54,3 +54,18 @@ Exemplo de GraphQL
             updatedAt
         }
     }
+
+***********************
+Aplicação em Javascript
+***********************
+
+::
+
+    import Amplify, { API, graphqlOperation } from 'aws-amplify';
+    import { getParticipante } from 'caminho/para/graphql/queries';
+
+    const pesquisa = {id: "idAqui"}
+    API.graphql(graphqlOperation(getParticipante, pesquisa)).
+    then(function (resultado) {
+    //realizar operações com o resultado da pesquisa aqui
+    });
