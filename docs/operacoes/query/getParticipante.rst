@@ -9,9 +9,9 @@ Informação necessária para fazer a query:
 
 Informações capazes de serem retornadas:
 
-- deleted
-- lastChangedAt
-- version
+- _deleted
+- _lastChangedAt
+- _version
 - createdAt
 - curso (String)
 - escolaridade (Int)
@@ -19,17 +19,17 @@ Informações capazes de serem retornadas:
 - genero (Int)
 - id (String)
 - nome (String)
-- participando\_id (String) { ... } //Informações de em quais eventos o participante esta inscrito
+- participando_id (String) { ... } //Informações de em quais eventos o participante esta inscrito
 - periodo (Int)
 - telefone (String)
 - universidade (String)
 - updatedAt
 
-.. _ex_GetParticipante:
 
 ***********************
-Aplicação em GraphQL
+GraphQL
 ***********************
+Definição da operação:
 
 ::
 
@@ -55,9 +55,35 @@ Aplicação em GraphQL
         }
     }
 
+Exemplo de operacao:
+
+::
+
+    query MyQuery {
+        getParticipante(id: "3b53c11a-761a-4a6f-abcd-b2f24c9a198c") {
+            nome
+            telefone
+            universidade
+            updatedAt
+        }
+    }
+
+    Retorno:
+    {
+        "data": {
+            "getParticipante": {
+            "nome": "Daniel Sant' Anna Andrade",
+            "telefone": "+5521 26919368",
+            "universidade": "UFRJ",
+            "updatedAt": "2021-02-10T19:06:06.264Z"
+            }
+        }
+    }
+
 ***********************
 Aplicação em Javascript
 ***********************
+Definição da operação:
 
 ::
 
@@ -67,5 +93,29 @@ Aplicação em Javascript
     const pesquisa = {id: "idAqui"}
     API.graphql(graphqlOperation(getParticipante, pesquisa)).
     then(function (resultado) {
-    //realizar operações com o resultado da pesquisa aqui
+        //realizar operações com o resultado da pesquisa aqui
     });
+
+Exemplo de operacao:
+
+::
+
+    import Amplify, { API, graphqlOperation } from 'aws-amplify';
+    import { getParticipante } from '.../graphql/queries';
+
+    const teste = () => {
+
+    const pesquisa = {id: "3b53c11a-761a-4a6f-abcd-b2f24c9a198c"};
+
+    API.graphql(graphqlOperation(getParticipante, pesquisa)).then(function (resultado) {
+        console.log(resultado) //Olhar console
+        //Realizar operações necessárias aqui
+        console.log(resultado.nome) //Nome do usuário com id acima definido
+    });
+
+    return (
+            <div className='teste'>
+            <p>teste</p>
+            </div>
+        );
+    }

@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Bem vindo a documentação da API utilizada no site da Semana da Química!
+Bem vindo a documentação da API(Banco de dados, Autenticador e funções especificas) utilizada no site da Semana da Química!
 
 Este documento possui o objetivo de exibir as operações existentes e como interagir com o banco de dados utilizando a API GraphQL
 
@@ -28,9 +28,18 @@ Conteudo:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Exemplos
+   :caption: Exemplos Query
 
    ./operacoes/query/getParticipante.rst
+   ./operacoes/query/getEvento.rst
+   ./operacoes/query/getParticipando.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Exemplos Mutation
+
+   ./operacoes/mutation/createParticipante.rst
+   ./operacoes/mutation/createEvento.rst
 
 
 Indices e tabelas
