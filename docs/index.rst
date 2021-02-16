@@ -11,13 +11,26 @@ Este documento possui o objetivo de exibir as operações existentes e como inte
 
 Conteudo:
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Introdução
+
+   1_authors.rst
+   2_instalacao.rst
+   3_banco_de_dados.rst
 
 .. toctree::
    :maxdepth: 2
-   :glob:
+   :caption: AppSync
 
-   *
+   4_appsync.rst
+   5_operacoes.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: AppSync
+
+   6_exemplos.rst
 
 
 Indices e tabelas
