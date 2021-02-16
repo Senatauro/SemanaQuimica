@@ -1,4 +1,4 @@
-Autores
+Autor
 -------
 
 * Carlos Gabriel Silva Stedile
