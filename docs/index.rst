@@ -11,6 +11,7 @@ Este documento possui o objetivo de exibir as operações existentes e como inte
 
 Conteudo:
 
+
 .. toctree::
    :maxdepth: 2
    :glob:
