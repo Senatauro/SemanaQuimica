@@ -1,5 +1,5 @@
 ========
-3 - AppSync
+AppSync
 ========
 Para realizar operações especificas e pesquisas/mudanças no banco de dados está sendo utilizado a API GraphQL que atua como serviço intermediario entre a aplicação e os serviços criados no backend.
 

@@ -1,5 +1,5 @@
 ========
-4 - Operações
+Operações
 ========
 As possiveis operações que podem ser executadas na API são:
 

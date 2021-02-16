@@ -1,5 +1,5 @@
 ========
-2 - Banco de Dados
+Banco de Dados
 ========
 Está sendo utilizado o DynamoDB como banco de dados na AWS.
 
