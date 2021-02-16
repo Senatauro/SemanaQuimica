@@ -41,11 +41,3 @@ Conteudo:
    ./operacoes/mutation/createParticipante.rst
    ./operacoes/mutation/createEvento.rst
 
-
-Indices e tabelas
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
