@@ -1,4 +1,4 @@
-createParticipante
+createEvento
 ===============
 
 Operação utilizada para criar um participante no banco de dados.
