@@ -30,7 +30,7 @@ Conteudo:
    :maxdepth: 2
    :caption: Exemplos
 
-   ./getParticipante.rst
+   ./operacoes/getParticipante.rst
 
 
 Indices e tabelas
