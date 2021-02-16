@@ -19,6 +19,18 @@ Conteudo:
    2_instalacao.rst
    3_banco_de_dados.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: AppSync
+
+   4_appsync.rst
+   5_operacoes.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Exemplos
+
+   ./getParticipante.rst
 
 
 Indices e tabelas
