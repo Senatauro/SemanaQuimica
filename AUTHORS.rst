@@ -1,7 +1,6 @@
-Authors
+Autores
 -------
 
-* Eric (New contributor)
-* Anthony 
+* Carlos Gabriel Silva Stedile
 
 
