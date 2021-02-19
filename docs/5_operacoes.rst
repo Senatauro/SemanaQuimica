@@ -37,3 +37,10 @@ Operações de Mutation
 - deleteEvento
 - deleteParticipando
 - deleteCertificado (Utilizado somente pelo backend)
+
+
+***********************
+Funções especiais (mutation)
+***********************
+
+- enviarEmail
