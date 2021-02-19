@@ -84,7 +84,7 @@ Exemplo de operacao:
 ::
 
     import Amplify, { API, graphqlOperation } from 'aws-amplify';
-    import { getParticipante } from '.../graphql/mutations';
+    import { enviarEmail } from '.../graphql/mutations';
 
     const teste = () => {
 
@@ -96,7 +96,7 @@ Exemplo de operacao:
         email: "cgsste@hotmail.com"
     }
 
-    API.graphql(graphqlOperation(getParticipante, { input: operacao })).then(function (resultado) {
+    API.graphql(graphqlOperation(enviarEmail, { input: operacao })).then(function (resultado) {
         console.log(resultado) //Olhar console
         //Realizar operações necessárias aqui
     });
