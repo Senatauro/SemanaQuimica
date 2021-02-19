@@ -44,5 +44,9 @@ Conteudo:
 
    ./operacoes/mutation/createParticipante.rst
    ./operacoes/mutation/createEvento.rst
-   ./operacoes/mutation/enviarEmail.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Exemplos de funções especiais
+
+   ./operacoes/mutation/enviarEmail.rst
