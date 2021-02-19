@@ -44,4 +44,5 @@ Conteudo:
 
    ./operacoes/mutation/createParticipante.rst
    ./operacoes/mutation/createEvento.rst
+   ./operacoes/mutation/enviarEmail.rst
 
