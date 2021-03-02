@@ -23,6 +23,7 @@ Informações capazes de serem retornadas:
 - nome_palestrante (String)
 - repositorio (String)
 - updatedAt
+- tipo_evento
 
 
 ***********************
@@ -50,6 +51,7 @@ Definição da operação:
             nome_palestrante
             repositorio
             updatedAt
+            tipo_evento
         }
     }
 

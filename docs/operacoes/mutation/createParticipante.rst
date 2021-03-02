@@ -8,6 +8,7 @@ Informação necessária para fazer a mutation:
 
 - nome: String!
 - telefone: String!
+- email: String!
 - genero: Int!              #1 - M; 2 - F; 3 - NB; 4 - O
 - escolaridade: Int!        #1 - Ens. Med.; 2 - Grad; 3 - Pós; 4 - Outro
 - estuda_ufrj: Boolean!     #1 - Sim; 2 - Não
@@ -47,7 +48,7 @@ Definição da operação:
 ::
 
     mutation MyMutation {
-        createParticipante(input: {cidade: "", curso: "", escolaridade: 1, estado: "", estuda_ufrj: false, genero: 1, nome: "", periodo: 1, telefone: "", universidade: ""}) {
+        createParticipante(input: {cidade: "", curso: "", email: "", escolaridade: 1, estado: "", estuda_ufrj: false, genero: 1, nome: "", periodo: 1, telefone: "", universidade: ""}) {
             id
         }
     }
@@ -57,7 +58,7 @@ Exemplo de operacao:
 ::
 
     mutation MyMutation {
-        createParticipante(input: {cidade: "Jataí", curso: "Ciências da computação", escolaridade: 2, estado: "Goiás", estuda_ufrj: false, genero: 1, nome: "Carlos Gabriel Silva Stedilee", periodo: 8, telefone: "64992438948", universidade: "Universidade Federal de Goiás"}) {
+        createParticipante(input: {cidade: "Jataí", curso: "Ciências da computação", email: "cgsste@hotmail.com", escolaridade: 2, estado: "Goiás", estuda_ufrj: false, genero: 1, nome: "Carlos Gabriel Silva Stedilee", periodo: 8, telefone: "64992438948", universidade: "Universidade Federal de Goiás"}) {
             id
         }
     }
@@ -84,6 +85,7 @@ Definição da operação:
 
     const operacao = {
         cidade: "",
+        email: "",
         curso: "",
         escolaridade: 1,
         estado: "", 
@@ -111,6 +113,7 @@ Exemplo de operacao:
 
     const operacao = {
         cidade: "Jataí",
+        email: "cgsste@hotmail.com",
         curso: "Ciências da computação",
         escolaridade: 2,
         estado: "Goiás",

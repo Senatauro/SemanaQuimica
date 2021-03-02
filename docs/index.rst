@@ -32,6 +32,11 @@ Conteudo:
 
 .. toctree::
    :maxdepth: 2
+   :caption: Cognito
+   6_cognito.rst
+
+.. toctree::
+   :maxdepth: 2
    :caption: Exemplos Query
 
    ./operacoes/query/getParticipante.rst
