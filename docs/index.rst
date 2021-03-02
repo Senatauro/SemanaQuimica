@@ -23,6 +23,7 @@ Conteudo:
    2_instalacao.rst
    3_banco_de_dados.rst
 
+
 .. toctree::
    :maxdepth: 2
    :caption: AppSync
@@ -30,10 +31,13 @@ Conteudo:
    4_appsync.rst
    5_operacoes.rst
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Cognito
+
    6_cognito.rst
+
 
 .. toctree::
    :maxdepth: 2
@@ -43,12 +47,14 @@ Conteudo:
    ./operacoes/query/getEvento.rst
    ./operacoes/query/getParticipando.rst
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Exemplos Mutation
 
    ./operacoes/mutation/createParticipante.rst
    ./operacoes/mutation/createEvento.rst
+
 
 .. toctree::
    :maxdepth: 2
